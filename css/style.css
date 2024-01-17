@@ -1,0 +1,117 @@
+#main-page {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/90abac18-0337-41ab-898b-4067e7bf9542/dsen2x-b598bca3-e19a-4c97-9fa3-fa13f626111f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwYWJhYzE4LTAzMzctNDFhYi04OThiLTQwNjdlN2JmOTU0MlwvZHNlbjJ4LWI1OThiY2EzLWUxOWEtNGM5Ny05ZmEzLWZhMTNmNjI2MTExZi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.fwv4BjekpW6Xb4MO5586kBQW_20teS4TPEEmonTRxnI');
+    background-size: cover;
+}
+
+#page-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#filter-bar {
+    border-radius: 10px;
+    background-color: gray;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    
+}
+
+#filter-parameter {
+    background-color: lightgray;
+    height: 100%;
+    color: black;
+    overflow: scroll;
+    list-style: none;
+}
+
+.filter-parameter-name {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#header {
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow:wrap;
+    width: 70%;
+    border: white;
+}
+
+
+.spy-card {
+    background-color: transparent;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-bottom: 10px;
+}
+
+
+
+.spy-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.spy-card:hover .spy-card-inner{
+    transform: rotateY(180deg);
+}
+
+.spy-card-front, .spy-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .spy-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .spy-card-back {
+    background-color: gray;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #spy-card-details-container {
+    background-color: #bbb;
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    
+  }
+
+  #spy-details-img {
+    border: 20px;
+    border-radius: 20px;
+    border-color: black;
+    padding: 10px;
+  }
+
+  #add-agent-form {
+    background-color: #bbb;
+    margin-bottom: 20px;
+  }
